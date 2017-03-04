@@ -1,0 +1,27 @@
+{
+  "name": "awesomeq",
+  "version": "1.0.0",
+  "description": "An awesome queueing system (way better than Amazon)",
+  "main": "src/app.js",
+  "scripts": {
+    "test": "test",
+    "run": "nodemon src/app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "awesomeq"
+  },
+  "keywords": [
+    "sns",
+    "queueing",
+    "awesomeness"
+  ],
+  "author": "epkatz",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.15.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.11.0"
+  }
+}
