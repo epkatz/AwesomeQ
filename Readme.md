@@ -46,3 +46,7 @@ Parameters:
 
 Cleanup Pending Messages
 GET /cleanup
+
+
+#### Configs
+You can make basic changes in the configs.js file
