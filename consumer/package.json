@@ -1,0 +1,22 @@
+{
+  "name": "consumer",
+  "version": "1.0.0",
+  "description": "A test consumer for AwesomeQ",
+  "bin": {
+    "consumer": "consumer.js"
+  },
+  "scripts": {
+    "run": "nodemon consumer.js"
+  },
+  "author": "Eli Katz",
+  "engines": {
+    "node": "*"
+  },
+  "dependencies": {
+    "parse-json": "^2.2.0",
+    "request": "^2.80.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.11.0"
+  }
+}

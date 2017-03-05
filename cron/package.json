@@ -1,0 +1,21 @@
+{
+  "name": "cron",
+  "version": "1.0.0",
+  "description": "A mock cron task manager",
+  "bin": {
+    "cron": "cron.js"
+  },
+  "scripts": {
+    "run": "nodemon cron.js"
+  },
+  "author": "Eli Katz",
+  "engines": {
+    "node": "*"
+  },
+  "dependencies": {
+    "request": "^2.80.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.11.0"
+  }
+}

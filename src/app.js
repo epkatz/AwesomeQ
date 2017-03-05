@@ -1,13 +1,19 @@
-var express = require('express')
-var app = express()
-var controllers = require('./controllers.js')
+const express = require('express')
+const app = express()
+const controllers = require('./controllers.js')
+const logger = require('./logger.js')
+const configs = require('./configs.js')
+const bodyParser = require('body-parser');
 
-app.get('/', function (req, res) {
-  res.send('Hello World!!')
-})
+logger.log('Starting app')
 
-app.use('/queues', controllers);
+app.get('/', function(req, res){
+    res.send('Running..');
+});
 
-app.listen(3000, function () {
-  console.log('AwesomeQ listening on port 3000!')
+app.use('/message', controllers);
+app.use(bodyParser.json());
+
+app.listen(configs.port, function () {
+  logger.log('AwesomeQ listening on port ' + configs.port);
 })

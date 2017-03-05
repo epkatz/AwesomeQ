@@ -1,0 +1,21 @@
+{
+  "name": "producer",
+  "version": "1.0.0",
+  "description": "A test producer for AwesomeQ",
+  "bin": {
+    "producer": "producer.js"
+  },
+  "scripts": {
+    "run": "nodemon producer.js"
+  },
+  "author": "Eli Katz",
+  "engines": {
+    "node": "*"
+  },
+  "dependencies": {
+    "request": "^2.80.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.11.0"
+  }
+}
